@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: hsl(0, 100%, 74%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg-intro-desktop.png);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    width: 80%;
+    /* height: 100vh; */
+    padding: 1em;
+}
+.container .text-div {
+    width: 50%;
+}
+.text-div h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 9em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1em;
+}
+.text-div p {
+    color: rgb(255, 255, 255);
+    width: 30em;
+    line-height: 2;
+    font-weight: 500;
+}
+
+
+.container .form-div {
+    width: 40%;
+}
+
+/* Free Trial Div */
+.form-div .try {
+    width: 100%;
+    padding: 1.5em;
+    background: hsl(248, 32%, 49%);
+    border: none;
+    border-radius: 5px;
+    color: hsl(246, 25%, 77%);
+    cursor: pointer;
+    box-shadow: 0 5px 5px hsl(248, 32%, 49%, 0.5);
+    margin-bottom: 1em;
+}
+.form-div span {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+.form-div form {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow: 0 10px 5px rgb(0,0,0,0.5);
+}
+form input {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    border: none;
+    outline: none;
+}
+
+.form-div .wrap-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid hsl(246, 25%, 77%); */
+    border-radius: 5px;
+    padding: 2px;
+    margin-bottom: 0.5em;
+}
+.form-div .error {
+    margin-right: 15px;
+    display: none;
+}
+.form-div .error-text {
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+    margin: 0.1em 0 1em 0;
+    /* display: none; */
+} 
+.form-div .submit {
+    width: 100%;
+    padding: 1em;
+    background: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+.form-div .terms {
+    font-size: 11px;
+    text-align: center;
+}
+.form-div .terms a {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 768px) {
+    main {
+        background-image: url(images/bg-intro-mobile.png);
+        margin: 6em 0;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .text-div {
+        width: 100%;
+        text-align: center;
+    }
+    .text-div h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+    .text-div p {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .form-div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .container .text-div {
+        width: 90%;
+    }
+    .container .form-div {
+        width: 90%;
+    }
+
+    .text-div h1 {
+        font-size: 2rem;
+    }
+    .text-div p {
+        width: 100%;
+        margin-bottom: 3em;
+    }
+    .form-div {
+        width: 100%;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Intro component with sign up form</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="text-div">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+      </div>
+
+      <div class="form-div">
+        <button class="try"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+
+        <form action="" id="form">
+          <div id="first-name-wrap" class="wrap-input">
+            <input id="first-name" type="text" placeholder="First Name">  <img class="error" src="images/icon-error.svg" alt="error">
+          </div><p id="first-name-error" class="error-text"></p>
+
+          <div id="last-name-wrap" lass="wrap-input">
+            <input id="last-name" type="text" placeholder="Last Name"> <img class="error" src="images/icon-error.svg" alt="error">
+          </div><p id="last-name-error" class="error-text"></p>
+
+          <div id="email-wrap" class="wrap-input">
+            <input id="email" type="email" placeholder="Email Address">  <img class="error" src="images/icon-error.svg" alt="error">
+          </div><p id="email-error" class="error-text"></p>
+
+          <div id="password-wrap" class="wrap-input">
+            <input id="password" type="password" placeholder="Password">  <img class="error" src="images/icon-error.svg" alt="error">
+          </div><p id="password-error" class="error-text"></p>
+
+          <button id="btn" class="submit" type="submit">Claim your free trial</button> 
+
+          <p class="terms">By clicking the button, you are agreeing to our <a href="https://www.example.com/terms">Terms and Services</a></p>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
